@@ -95,10 +95,6 @@ final class Task3ViewController: UIViewController {
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             titleLabel.bottomAnchor.constraint(equalTo: bodyLabel.topAnchor, constant: -12),
-            
-            
-
-            
         ])
     }
     
