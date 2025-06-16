@@ -68,6 +68,7 @@ final class Task3ViewController: UIViewController {
         logInButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(logInButton)
         
+        titleLabel.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, multiplier: 0.3).isActive = true
         
         NSLayoutConstraint.activate([
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
@@ -87,14 +88,16 @@ final class Task3ViewController: UIViewController {
             usernameField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             usernameField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             usernameField.bottomAnchor.constraint(equalTo: passwordField.topAnchor, constant: -10),
+            usernameField.topAnchor.constraint(equalTo: bodyLabel.bottomAnchor, constant: 40),
             
             bodyLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             bodyLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            usernameField.topAnchor.constraint(equalTo: bodyLabel.bottomAnchor, constant: 40),
+            bodyLabel.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, multiplier: 0.3),
+            bodyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
             
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: bodyLabel.topAnchor, constant: -12),
+        
         ])
     }
     
@@ -115,8 +118,30 @@ final class Task3ViewController: UIViewController {
     private func setupLabels() {
         titleLabel.text = "Sign In"
         titleLabel.font = .boldSystemFont(ofSize: 32)
-        bodyLabel.numberOfLines = 3
+        bodyLabel.numberOfLines = 0
         bodyLabel.text = """
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore
         """
