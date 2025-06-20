@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FF91F3C62E006DD000A5D2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF91F3A72E006DCE00A5D2E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF91F3AE2E006DCE00A5D2E8;
+			remoteInfo = MultiTabApllication;
+		};
+		FF91F3D02E006DD000A5D2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF91F3A72E006DCE00A5D2E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF91F3AE2E006DCE00A5D2E8;
+			remoteInfo = MultiTabApllication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF91F3AF2E006DCE00A5D2E8 /* MultiTabApllication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTabApllication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF91F3C52E006DD000A5D2E8 /* MultiTabApllicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiTabApllicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF91F3CF2E006DD000A5D2E8 /* MultiTabApllicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiTabApllicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF91F3D72E006DD000A5D2E8 /* Exceptions for "MultiTabApllication" folder in "MultiTabApllication" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF91F3AE2E006DCE00A5D2E8 /* MultiTabApllication */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF91F3B12E006DCE00A5D2E8 /* MultiTabApllication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF91F3D72E006DD000A5D2E8 /* Exceptions for "MultiTabApllication" folder in "MultiTabApllication" target */,
+			);
+			path = MultiTabApllication;
+			sourceTree = "<group>";
+		};
+		FF91F3C82E006DD000A5D2E8 /* MultiTabApllicationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MultiTabApllicationTests;
+			sourceTree = "<group>";
+		};
+		FF91F3D22E006DD000A5D2E8 /* MultiTabApllicationUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MultiTabApllicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF91F3AC2E006DCE00A5D2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3C22E006DD000A5D2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3CC2E006DD000A5D2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF91F3A62E006DCE00A5D2E8 = {
+			isa = PBXGroup;
+			children = (
+				FF91F3B12E006DCE00A5D2E8 /* MultiTabApllication */,
+				FF91F3C82E006DD000A5D2E8 /* MultiTabApllicationTests */,
+				FF91F3D22E006DD000A5D2E8 /* MultiTabApllicationUITests */,
+				FF91F3B02E006DCE00A5D2E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF91F3B02E006DCE00A5D2E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF91F3AF2E006DCE00A5D2E8 /* MultiTabApllication.app */,
+				FF91F3C52E006DD000A5D2E8 /* MultiTabApllicationTests.xctest */,
+				FF91F3CF2E006DD000A5D2E8 /* MultiTabApllicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF91F3AE2E006DCE00A5D2E8 /* MultiTabApllication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF91F3D82E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllication" */;
+			buildPhases = (
+				FF91F3AB2E006DCE00A5D2E8 /* Sources */,
+				FF91F3AC2E006DCE00A5D2E8 /* Frameworks */,
+				FF91F3AD2E006DCE00A5D2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF91F3B12E006DCE00A5D2E8 /* MultiTabApllication */,
+			);
+			name = MultiTabApllication;
+			packageProductDependencies = (
+			);
+			productName = MultiTabApllication;
+			productReference = FF91F3AF2E006DCE00A5D2E8 /* MultiTabApllication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF91F3C42E006DD000A5D2E8 /* MultiTabApllicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF91F3DD2E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllicationTests" */;
+			buildPhases = (
+				FF91F3C12E006DD000A5D2E8 /* Sources */,
+				FF91F3C22E006DD000A5D2E8 /* Frameworks */,
+				FF91F3C32E006DD000A5D2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF91F3C72E006DD000A5D2E8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF91F3C82E006DD000A5D2E8 /* MultiTabApllicationTests */,
+			);
+			name = MultiTabApllicationTests;
+			packageProductDependencies = (
+			);
+			productName = MultiTabApllicationTests;
+			productReference = FF91F3C52E006DD000A5D2E8 /* MultiTabApllicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF91F3CE2E006DD000A5D2E8 /* MultiTabApllicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF91F3E02E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllicationUITests" */;
+			buildPhases = (
+				FF91F3CB2E006DD000A5D2E8 /* Sources */,
+				FF91F3CC2E006DD000A5D2E8 /* Frameworks */,
+				FF91F3CD2E006DD000A5D2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF91F3D12E006DD000A5D2E8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF91F3D22E006DD000A5D2E8 /* MultiTabApllicationUITests */,
+			);
+			name = MultiTabApllicationUITests;
+			packageProductDependencies = (
+			);
+			productName = MultiTabApllicationUITests;
+			productReference = FF91F3CF2E006DD000A5D2E8 /* MultiTabApllicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF91F3A72E006DCE00A5D2E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FF91F3AE2E006DCE00A5D2E8 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FF91F3C42E006DD000A5D2E8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF91F3AE2E006DCE00A5D2E8;
+					};
+					FF91F3CE2E006DD000A5D2E8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF91F3AE2E006DCE00A5D2E8;
+					};
+				};
+			};
+			buildConfigurationList = FF91F3AA2E006DCE00A5D2E8 /* Build configuration list for PBXProject "MultiTabApllication" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF91F3A62E006DCE00A5D2E8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FF91F3B02E006DCE00A5D2E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF91F3AE2E006DCE00A5D2E8 /* MultiTabApllication */,
+				FF91F3C42E006DD000A5D2E8 /* MultiTabApllicationTests */,
+				FF91F3CE2E006DD000A5D2E8 /* MultiTabApllicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF91F3AD2E006DCE00A5D2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3C32E006DD000A5D2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3CD2E006DD000A5D2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF91F3AB2E006DCE00A5D2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3C12E006DD000A5D2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF91F3CB2E006DD000A5D2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF91F3C72E006DD000A5D2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF91F3AE2E006DCE00A5D2E8 /* MultiTabApllication */;
+			targetProxy = FF91F3C62E006DD000A5D2E8 /* PBXContainerItemProxy */;
+		};
+		FF91F3D12E006DD000A5D2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF91F3AE2E006DCE00A5D2E8 /* MultiTabApllication */;
+			targetProxy = FF91F3D02E006DD000A5D2E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF91F3D92E006DD000A5D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56K7W9639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiTabApllication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF91F3DA2E006DD000A5D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56K7W9639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiTabApllication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF91F3DB2E006DD000A5D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF91F3DC2E006DD000A5D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF91F3DE2E006DD000A5D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiTabApllication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiTabApllication";
+			};
+			name = Debug;
+		};
+		FF91F3DF2E006DD000A5D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiTabApllication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiTabApllication";
+			};
+			name = Release;
+		};
+		FF91F3E12E006DD000A5D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiTabApllication;
+			};
+			name = Debug;
+		};
+		FF91F3E22E006DD000A5D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.MultiTabApllicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiTabApllication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF91F3AA2E006DCE00A5D2E8 /* Build configuration list for PBXProject "MultiTabApllication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF91F3DB2E006DD000A5D2E8 /* Debug */,
+				FF91F3DC2E006DD000A5D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF91F3D82E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF91F3D92E006DD000A5D2E8 /* Debug */,
+				FF91F3DA2E006DD000A5D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF91F3DD2E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF91F3DE2E006DD000A5D2E8 /* Debug */,
+				FF91F3DF2E006DD000A5D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF91F3E02E006DD000A5D2E8 /* Build configuration list for PBXNativeTarget "MultiTabApllicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF91F3E12E006DD000A5D2E8 /* Debug */,
+				FF91F3E22E006DD000A5D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF91F3A72E006DCE00A5D2E8 /* Project object */;
+}
