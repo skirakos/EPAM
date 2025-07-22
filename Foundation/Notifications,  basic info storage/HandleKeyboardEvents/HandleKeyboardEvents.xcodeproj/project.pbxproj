@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FF1DBA532E256BE000261AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1DBA342E256BDE00261AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1DBA3B2E256BDE00261AAA;
+			remoteInfo = HandleKeyboardEvents;
+		};
+		FF1DBA5D2E256BE000261AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1DBA342E256BDE00261AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1DBA3B2E256BDE00261AAA;
+			remoteInfo = HandleKeyboardEvents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF1DBA3C2E256BDE00261AAA /* HandleKeyboardEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandleKeyboardEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1DBA522E256BE000261AAA /* HandleKeyboardEventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandleKeyboardEventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1DBA5C2E256BE000261AAA /* HandleKeyboardEventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandleKeyboardEventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF1DBA642E256BE000261AAA /* Exceptions for "HandleKeyboardEvents" folder in "HandleKeyboardEvents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF1DBA3B2E256BDE00261AAA /* HandleKeyboardEvents */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF1DBA3E2E256BDE00261AAA /* HandleKeyboardEvents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF1DBA642E256BE000261AAA /* Exceptions for "HandleKeyboardEvents" folder in "HandleKeyboardEvents" target */,
+			);
+			path = HandleKeyboardEvents;
+			sourceTree = "<group>";
+		};
+		FF1DBA552E256BE000261AAA /* HandleKeyboardEventsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HandleKeyboardEventsTests;
+			sourceTree = "<group>";
+		};
+		FF1DBA5F2E256BE000261AAA /* HandleKeyboardEventsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HandleKeyboardEventsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1DBA392E256BDE00261AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA4F2E256BE000261AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA592E256BE000261AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF1DBA332E256BDE00261AAA = {
+			isa = PBXGroup;
+			children = (
+				FF1DBA3E2E256BDE00261AAA /* HandleKeyboardEvents */,
+				FF1DBA552E256BE000261AAA /* HandleKeyboardEventsTests */,
+				FF1DBA5F2E256BE000261AAA /* HandleKeyboardEventsUITests */,
+				FF1DBA3D2E256BDE00261AAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1DBA3D2E256BDE00261AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1DBA3C2E256BDE00261AAA /* HandleKeyboardEvents.app */,
+				FF1DBA522E256BE000261AAA /* HandleKeyboardEventsTests.xctest */,
+				FF1DBA5C2E256BE000261AAA /* HandleKeyboardEventsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1DBA3B2E256BDE00261AAA /* HandleKeyboardEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1DBA652E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEvents" */;
+			buildPhases = (
+				FF1DBA382E256BDE00261AAA /* Sources */,
+				FF1DBA392E256BDE00261AAA /* Frameworks */,
+				FF1DBA3A2E256BDE00261AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF1DBA3E2E256BDE00261AAA /* HandleKeyboardEvents */,
+			);
+			name = HandleKeyboardEvents;
+			packageProductDependencies = (
+			);
+			productName = HandleKeyboardEvents;
+			productReference = FF1DBA3C2E256BDE00261AAA /* HandleKeyboardEvents.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1DBA512E256BE000261AAA /* HandleKeyboardEventsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1DBA6A2E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEventsTests" */;
+			buildPhases = (
+				FF1DBA4E2E256BE000261AAA /* Sources */,
+				FF1DBA4F2E256BE000261AAA /* Frameworks */,
+				FF1DBA502E256BE000261AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1DBA542E256BE000261AAA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF1DBA552E256BE000261AAA /* HandleKeyboardEventsTests */,
+			);
+			name = HandleKeyboardEventsTests;
+			packageProductDependencies = (
+			);
+			productName = HandleKeyboardEventsTests;
+			productReference = FF1DBA522E256BE000261AAA /* HandleKeyboardEventsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1DBA5B2E256BE000261AAA /* HandleKeyboardEventsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1DBA6D2E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEventsUITests" */;
+			buildPhases = (
+				FF1DBA582E256BE000261AAA /* Sources */,
+				FF1DBA592E256BE000261AAA /* Frameworks */,
+				FF1DBA5A2E256BE000261AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1DBA5E2E256BE000261AAA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF1DBA5F2E256BE000261AAA /* HandleKeyboardEventsUITests */,
+			);
+			name = HandleKeyboardEventsUITests;
+			packageProductDependencies = (
+			);
+			productName = HandleKeyboardEventsUITests;
+			productReference = FF1DBA5C2E256BE000261AAA /* HandleKeyboardEventsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1DBA342E256BDE00261AAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FF1DBA3B2E256BDE00261AAA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FF1DBA512E256BE000261AAA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF1DBA3B2E256BDE00261AAA;
+					};
+					FF1DBA5B2E256BE000261AAA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF1DBA3B2E256BDE00261AAA;
+					};
+				};
+			};
+			buildConfigurationList = FF1DBA372E256BDE00261AAA /* Build configuration list for PBXProject "HandleKeyboardEvents" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1DBA332E256BDE00261AAA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FF1DBA3D2E256BDE00261AAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1DBA3B2E256BDE00261AAA /* HandleKeyboardEvents */,
+				FF1DBA512E256BE000261AAA /* HandleKeyboardEventsTests */,
+				FF1DBA5B2E256BE000261AAA /* HandleKeyboardEventsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1DBA3A2E256BDE00261AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA502E256BE000261AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA5A2E256BE000261AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1DBA382E256BDE00261AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA4E2E256BE000261AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1DBA582E256BE000261AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1DBA542E256BE000261AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1DBA3B2E256BDE00261AAA /* HandleKeyboardEvents */;
+			targetProxy = FF1DBA532E256BE000261AAA /* PBXContainerItemProxy */;
+		};
+		FF1DBA5E2E256BE000261AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1DBA3B2E256BDE00261AAA /* HandleKeyboardEvents */;
+			targetProxy = FF1DBA5D2E256BE000261AAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF1DBA662E256BE000261AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56K7W9639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HandleKeyboardEvents/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEvents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1DBA672E256BE000261AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56K7W9639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HandleKeyboardEvents/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEvents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF1DBA682E256BE000261AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF1DBA692E256BE000261AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1DBA6B2E256BE000261AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEventsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandleKeyboardEvents.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HandleKeyboardEvents";
+			};
+			name = Debug;
+		};
+		FF1DBA6C2E256BE000261AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEventsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandleKeyboardEvents.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HandleKeyboardEvents";
+			};
+			name = Release;
+		};
+		FF1DBA6E2E256BE000261AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEventsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandleKeyboardEvents;
+			};
+			name = Debug;
+		};
+		FF1DBA6F2E256BE000261AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.HandleKeyboardEventsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandleKeyboardEvents;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1DBA372E256BDE00261AAA /* Build configuration list for PBXProject "HandleKeyboardEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1DBA682E256BE000261AAA /* Debug */,
+				FF1DBA692E256BE000261AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1DBA652E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1DBA662E256BE000261AAA /* Debug */,
+				FF1DBA672E256BE000261AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1DBA6A2E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEventsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1DBA6B2E256BE000261AAA /* Debug */,
+				FF1DBA6C2E256BE000261AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1DBA6D2E256BE000261AAA /* Build configuration list for PBXNativeTarget "HandleKeyboardEventsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1DBA6E2E256BE000261AAA /* Debug */,
+				FF1DBA6F2E256BE000261AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1DBA342E256BDE00261AAA /* Project object */;
+}

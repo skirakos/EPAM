@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FF723AC62E217D2900CA3C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF723AA72E217D2700CA3C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF723AAE2E217D2700CA3C7E;
+			remoteInfo = SaveRetrieveTextFiles;
+		};
+		FF723AD02E217D2900CA3C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF723AA72E217D2700CA3C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF723AAE2E217D2700CA3C7E;
+			remoteInfo = SaveRetrieveTextFiles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF723AAF2E217D2700CA3C7E /* SaveRetrieveTextFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveRetrieveTextFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF723AC52E217D2900CA3C7E /* SaveRetrieveTextFilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveRetrieveTextFilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF723ACF2E217D2900CA3C7E /* SaveRetrieveTextFilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveRetrieveTextFilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF723AD72E217D2900CA3C7E /* Exceptions for "SaveRetrieveTextFiles" folder in "SaveRetrieveTextFiles" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF723AAE2E217D2700CA3C7E /* SaveRetrieveTextFiles */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF723AB12E217D2700CA3C7E /* SaveRetrieveTextFiles */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF723AD72E217D2900CA3C7E /* Exceptions for "SaveRetrieveTextFiles" folder in "SaveRetrieveTextFiles" target */,
+			);
+			path = SaveRetrieveTextFiles;
+			sourceTree = "<group>";
+		};
+		FF723AC82E217D2900CA3C7E /* SaveRetrieveTextFilesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaveRetrieveTextFilesTests;
+			sourceTree = "<group>";
+		};
+		FF723AD22E217D2900CA3C7E /* SaveRetrieveTextFilesUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaveRetrieveTextFilesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF723AAC2E217D2700CA3C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723AC22E217D2900CA3C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723ACC2E217D2900CA3C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF723AA62E217D2700CA3C7E = {
+			isa = PBXGroup;
+			children = (
+				FF723AB12E217D2700CA3C7E /* SaveRetrieveTextFiles */,
+				FF723AC82E217D2900CA3C7E /* SaveRetrieveTextFilesTests */,
+				FF723AD22E217D2900CA3C7E /* SaveRetrieveTextFilesUITests */,
+				FF723AB02E217D2700CA3C7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF723AB02E217D2700CA3C7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF723AAF2E217D2700CA3C7E /* SaveRetrieveTextFiles.app */,
+				FF723AC52E217D2900CA3C7E /* SaveRetrieveTextFilesTests.xctest */,
+				FF723ACF2E217D2900CA3C7E /* SaveRetrieveTextFilesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF723AAE2E217D2700CA3C7E /* SaveRetrieveTextFiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF723AD82E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFiles" */;
+			buildPhases = (
+				FF723AAB2E217D2700CA3C7E /* Sources */,
+				FF723AAC2E217D2700CA3C7E /* Frameworks */,
+				FF723AAD2E217D2700CA3C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF723AB12E217D2700CA3C7E /* SaveRetrieveTextFiles */,
+			);
+			name = SaveRetrieveTextFiles;
+			packageProductDependencies = (
+			);
+			productName = SaveRetrieveTextFiles;
+			productReference = FF723AAF2E217D2700CA3C7E /* SaveRetrieveTextFiles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF723AC42E217D2900CA3C7E /* SaveRetrieveTextFilesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF723ADD2E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFilesTests" */;
+			buildPhases = (
+				FF723AC12E217D2900CA3C7E /* Sources */,
+				FF723AC22E217D2900CA3C7E /* Frameworks */,
+				FF723AC32E217D2900CA3C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF723AC72E217D2900CA3C7E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF723AC82E217D2900CA3C7E /* SaveRetrieveTextFilesTests */,
+			);
+			name = SaveRetrieveTextFilesTests;
+			packageProductDependencies = (
+			);
+			productName = SaveRetrieveTextFilesTests;
+			productReference = FF723AC52E217D2900CA3C7E /* SaveRetrieveTextFilesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF723ACE2E217D2900CA3C7E /* SaveRetrieveTextFilesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF723AE02E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFilesUITests" */;
+			buildPhases = (
+				FF723ACB2E217D2900CA3C7E /* Sources */,
+				FF723ACC2E217D2900CA3C7E /* Frameworks */,
+				FF723ACD2E217D2900CA3C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF723AD12E217D2900CA3C7E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF723AD22E217D2900CA3C7E /* SaveRetrieveTextFilesUITests */,
+			);
+			name = SaveRetrieveTextFilesUITests;
+			packageProductDependencies = (
+			);
+			productName = SaveRetrieveTextFilesUITests;
+			productReference = FF723ACF2E217D2900CA3C7E /* SaveRetrieveTextFilesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF723AA72E217D2700CA3C7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FF723AAE2E217D2700CA3C7E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FF723AC42E217D2900CA3C7E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF723AAE2E217D2700CA3C7E;
+					};
+					FF723ACE2E217D2900CA3C7E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF723AAE2E217D2700CA3C7E;
+					};
+				};
+			};
+			buildConfigurationList = FF723AAA2E217D2700CA3C7E /* Build configuration list for PBXProject "SaveRetrieveTextFiles" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF723AA62E217D2700CA3C7E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FF723AB02E217D2700CA3C7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF723AAE2E217D2700CA3C7E /* SaveRetrieveTextFiles */,
+				FF723AC42E217D2900CA3C7E /* SaveRetrieveTextFilesTests */,
+				FF723ACE2E217D2900CA3C7E /* SaveRetrieveTextFilesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF723AAD2E217D2700CA3C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723AC32E217D2900CA3C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723ACD2E217D2900CA3C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF723AAB2E217D2700CA3C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723AC12E217D2900CA3C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF723ACB2E217D2900CA3C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF723AC72E217D2900CA3C7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF723AAE2E217D2700CA3C7E /* SaveRetrieveTextFiles */;
+			targetProxy = FF723AC62E217D2900CA3C7E /* PBXContainerItemProxy */;
+		};
+		FF723AD12E217D2900CA3C7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF723AAE2E217D2700CA3C7E /* SaveRetrieveTextFiles */;
+			targetProxy = FF723AD02E217D2900CA3C7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF723AD92E217D2900CA3C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveRetrieveTextFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFiles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF723ADA2E217D2900CA3C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveRetrieveTextFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFiles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF723ADB2E217D2900CA3C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF723ADC2E217D2900CA3C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF723ADE2E217D2900CA3C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFilesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveRetrieveTextFiles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SaveRetrieveTextFiles";
+			};
+			name = Debug;
+		};
+		FF723ADF2E217D2900CA3C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFilesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveRetrieveTextFiles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SaveRetrieveTextFiles";
+			};
+			name = Release;
+		};
+		FF723AE12E217D2900CA3C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFilesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaveRetrieveTextFiles;
+			};
+			name = Debug;
+		};
+		FF723AE22E217D2900CA3C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Seda-Kirakosyan.SaveRetrieveTextFilesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaveRetrieveTextFiles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF723AAA2E217D2700CA3C7E /* Build configuration list for PBXProject "SaveRetrieveTextFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF723ADB2E217D2900CA3C7E /* Debug */,
+				FF723ADC2E217D2900CA3C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF723AD82E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF723AD92E217D2900CA3C7E /* Debug */,
+				FF723ADA2E217D2900CA3C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF723ADD2E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFilesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF723ADE2E217D2900CA3C7E /* Debug */,
+				FF723ADF2E217D2900CA3C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF723AE02E217D2900CA3C7E /* Build configuration list for PBXNativeTarget "SaveRetrieveTextFilesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF723AE12E217D2900CA3C7E /* Debug */,
+				FF723AE22E217D2900CA3C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF723AA72E217D2700CA3C7E /* Project object */;
+}
