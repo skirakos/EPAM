@@ -19,9 +19,8 @@ struct Movie: Decodable {
     let first_air_date: String
     let origin_country: [String]
     let popularity: Double
-//    let number_of_seasons: Int
-//    let number_of_episodes: Int
     let vote_average: Double
+    
 }
 
 enum NetworkError : Error {
@@ -110,7 +109,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
 }
-
-#Preview {
-    ViewController()
-}
+//
+//#Preview {
+//    ViewController()
+//}
