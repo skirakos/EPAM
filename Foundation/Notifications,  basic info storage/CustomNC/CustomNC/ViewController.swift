@@ -14,19 +14,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Add ButtonVC
         addChild(buttonVC)
         buttonVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(buttonVC.view)
         buttonVC.didMove(toParent: self)
 
-        // Add LabelVC
         addChild(labelVC)
         labelVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(labelVC.view)
         labelVC.didMove(toParent: self)
 
-        // Layout
         NSLayoutConstraint.activate([
             buttonVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
             buttonVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
