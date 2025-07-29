@@ -1,0 +1,91 @@
+@Tutorial(time: 15) {
+    @Intro(title: "GCD: Dispatch.main vs MainActor") {
+        In this tutorial we shall slightly cover the difference between old plain Dispatch.main and MainActor
+        from Swift Concurrency.
+        
+        Important: make sure you have already checked article on Async/Await basics,
+        preceeding the tutorial section.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Dispatch.main is not the same as MainActor.run") {
+        @ContentAndMedia {
+            Let's see the difference of the MainActor context execution.
+            
+            @Image(source: tutorialDispatchMainVsMainActorLogo, alt: "A scheme presenting MainActor ensures thread safety")
+        }
+
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+            }
+                        
+            @Step {
+                Declare function to host async functionality calls. This function will execute async `operation`. When it is done, it will call `completion`. 
+                
+                @Code(name: "Dispatch.main vs MainActor", file: DispatchMainVsMainActorCodeSampleStep2.swift)
+            }
+            
+            @Step {
+                Add completion declaration, checking whether the completion is executed on the Main Thread.
+                
+                @Code(name: "Dispatch.main vs MainActor", file: DispatchMainVsMainActorCodeSampleStep3.swift)
+            }
+            
+            @Step {
+                Add a function call with an empty body and completion for now
+
+                @Code(name: "Dispatch.main vs MainActor", file: DispatchMainVsMainActorCodeSampleStep4.swift)
+            }
+            
+            @Step {
+                Add `operation` body. It will also contain execution Thread check.
+                
+                @Code(name: "Dispatch.main vs MainActor", file: DispatchMainVsMainActorCodeSampleStep5.swift)
+            }
+            
+            @Step {
+                As you can see, Task, where we have `try await operation()` has @MainActor annotation.
+                Make your guess on the console output.  Take your time.
+            }
+            
+            @Step {
+                Build and run. As you can see the operation execution is captured to happen outside of the Main Thread even though the Task is marked with @MainActor. This happens becaust `try await operation()` is another suspension point and the system decides on the go which thread/context to run `operation` depending on the closure attributes. Which in our case are `operation: @escaping @Sendable () async throws`, which means it can be executed anywhere.
+                
+                @Image(source: tutorialDispatchMainVsMainAtorExecutionConsolOutput1, alt: "Xcode console output. Execution happens outside of the Main Thread")
+            }
+            
+            @Step {
+                In order to force async operation execution on the Main Thread we need to add excplicit `@MainActor`
+                attribute within the closure signature.
+                
+                @Code(name: "Dispatch.main vs MainActor", file: DispatchMainVsMainActorCodeSampleStep6.swift)
+            }
+            
+            @Step {
+                Build and run the code once again. This time the execution Thread check was passed
+                successfully. Both the operation and the completion were performed on the Main Thread.
+                
+                @Image(source: tutorialDispatchMainVsMainAtorExecutionConsolOutput2, alt: "Xcode console output. Execution happens on the Main Thread")
+            }
+            
+            @Step {
+                Recap: Async task execution is not forced to happen on the Main Thread even when called
+                within MainActor context. In place of the suspension point (everything on the right side of `await` keyword) the execution might be switched
+                to any vacant thread. In order to ensure the execution on the Main Thread, you should add @MainActor explicetly to function or closure declaration.
+                Since the completion within the example provided is synchronous (e.g. contains no suspension
+                points) its execution will always happen on the Main Thread while it is being called from
+                inside of the Main Actor context.
+            }
+            
+            @Step {
+                Bonus: Swift Perfecting 2. While in async context, thread selection happens in real time, even "Thread.isMainThread" is going to cause an error in Swift 6. So, we can rewrite the check, to demonstrates the thread with `dispatchPrecondition(condition: .onQueue(.main))
+                
+                @Code(name: "Error handling", file: DispatchMainVsMainActorCodeSampleStep7.swift)
+            }
+            
+        }
+    }
+}

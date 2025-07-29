@@ -1,0 +1,50 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Error Handling applying to Acync/Await") {
+        In this tutorial we will review options to handle errors in context of async/await functionality.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "try/catch and Result") {
+        @ContentAndMedia {
+            Let's review ways to handle errors and how Swift changes in this topic.
+            
+            @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        }
+        
+        @Steps {
+            @Step {
+                Asyncronius code is potentially throwing piece of functionality. 
+                Let's work with the following throwing function
+                
+                @Code(name: "try/catch and Result", file: ErrorHandlingCodeSampleStep1.swift)
+            }
+            
+            @Step {
+                So, traditional Swift error hadling looks like this. Code, that calls async function is not aware of error type it can throw, so need to have additional universal catch statement `catch let error`
+                
+                @Code(name: "try/catch and Result", file: ErrorHandlingCodeSampleStep2.swift)
+            }
+            
+            @Step {
+                Swift 5 introduced the Result type that impements imperative approach and gives us option to specify type of error.
+                
+                @Code(name: "try/catch and Result", file: ErrorHandlingCodeSampleStep3.swift)
+            }
+            
+            @Step {
+                More over, as it is a type, we can use Result in completion handler
+                
+                @Code(name: "try/catch and Result", file: ErrorHandlingCodeSampleStep4.swift)
+            }
+            
+            @Step {
+                Please, note, that in next versions of Swift throw statement will have option to specify type of error too.
+                More details by the link.
+                https://github.com/apple/swift-evolution/blob/main/proposals/0413-typed-throws.md
+                
+                @Code(name: "try/catch and Result", file: ErrorHandlingCodeSampleStep5.swift)
+            }
+        }
+    }
+}

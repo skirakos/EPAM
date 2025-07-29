@@ -1,0 +1,81 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Protocol conformance") {
+        There are several corner cases collected from the real life where the behaviour 
+        of the async/await functionality in terms of protocol conformance might be tricky
+        to understand. Let's check them out.
+        
+        Important: make sure you have already checked article on Async/Await basics,
+        preceeding the tutorial section.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Protocol requiring execution on MainActor") {
+        @ContentAndMedia {
+            The protocol in Swift can force Main Actor execution. This can be achieved either by
+            applying Main Actor declaration to the protocol itself or to a specific method of
+            the protocol. Let's check the first one.
+            
+            @Image(source: tutorialProtocolsLogo.png, alt: "Swift logo over the white background with protocols title")
+        }
+        
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+                }
+                
+            @Step {
+                Declare the protocol requiring MainActor execution.
+                
+                @Code(name: "GeneralMainActorProtocol", file: ProtocolCodeSampleStep1.swift)
+                }
+                
+            @Step {
+                Declare a class conforming the protocol.
+                
+                @Code(name: "GeneralConformance", file: ProtocolCodeSampleStep2.swift)
+                }
+                
+            @Step {
+                Declare a func which calls the methods of the declared class.
+                
+                @Code(name: "GeneralConformance", file: ProtocolCodeSampleStep3.swift)
+                }
+                
+            @Step {
+                Result: As you can see. When the protocol itself requires MainActor execution, this
+                requirement will expand to all the functions of the class, which conforms to the protocol.
+                @Code(name: "GeneralConformance", file: ProtocolCodeSampleStep3Explanation.swift)
+                }
+                
+            @Step {
+                This behaviour can be escaped from in case the conformance is implemented via the class
+                extension.
+                Declare a class but do not declare protocol conformance for now.
+                
+                @Code(name: "GeneralConformanceThroughExtension", file: ProtocolCodeSampleStep4.swift)
+                }
+                
+            @Step {
+                Declare protocol conformance via class extension.
+                
+                @Code(name: "GeneralConformanceThroughExtension", file: ProtocolCodeSampleStep5.swift)
+                }
+                
+            @Step {
+                Create a function and call class instance methods those which are under protocol and those which are not.
+                
+                @Code(name: "GeneralConformanceThroughExtension", file: ProtocolCodeSampleStep6.swift)
+                }
+                
+            @Step {
+                Result: protocol conformance implemented via class extension ensures MainActor execution
+                only for the protocol functions. This requirement is not expanded to class instance
+                methods.
+                
+                @Code(name: "GeneralConformanceThroughExtension", file: ProtocolCodeSampleStep6.swift)
+                }
+            }
+        }
+    }

@@ -1,0 +1,88 @@
+@Tutorial(time: 20) {
+    @Intro(title: "Swift Concurrency: Async Tests - Advanced") {
+        This turotial will show cases when you need to test behavior before, in the middel and after async/await tasks. How to control your dependencies, their order of completion and values they produce. Also we will check how to test task cancellation.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Async Unit Tests - medium to test use case") {
+        @ContentAndMedia {
+            Note: Please use XCode project instead of playground for this tutorial.
+            
+            @Image(source: tutorialActorsLogo, alt: "Swift logo on the orange background with Actor title")
+        }
+        
+        @Steps {
+            @Step {
+                This time let's try to check a bit more complicated example. We have a `ViewModelAdvanced`, that has a property `displayedText`. But this time we have two API requests, that run in parallel, and `displayedText` property should show loading progress. Please check comments in `fetchUserButtonTapped`" 
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_1.swift)
+            }
+            
+            @Step {
+                Let's implemenent that functionality before testing it. This time we have a protocol for our API Service that in addition to `fetchUser` has addionatl `fetchSomeData`, that returns string. We will store results of APIs in two variables and in `fetchUserButtonTapped` we will start two parallel tasks, that will execute that requests independently.  
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_2.swift)
+            }
+            
+            @Step {
+                Now we need to update UI each time, when one of requests is finished. Please note that error handling is not in scope of that example, we are implementing and showing an example only for happy path. You can add proper error handling tests as part of self learning after finishing that tutorial 
+                
+                Please note that we have marked `updateDisplayedText` with @MainActor to simulate case, when there is something that is working with UI thread and pushing updates there.  
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_3.swift)
+            }
+            
+            @Step {
+                So now let's check what it takes to test such functionality. But first let's add some mocks and test class, and write in comments what is the expected behavior
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_4.swift)
+            }
+            
+            @Step {
+                It's easy to check the state right after `fetchUserButtonTapped()` invocation, however, how can we check what happens right after APIs are invoked? We can't do that directly in mocks, because changes are applied after closures, and what is worse, they even scheduled to main thread, so there will be some additional time spent on redirecting and changing the var on the Main thread. 
+                
+                So we need to actually CONTROL the order and sequence how our mocks emit results to the View model, so we could first emit the user, check the result, and only after that emit `otherData` and check the result for the second time.  
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_5.swift)
+            }
+            
+            @Step {
+                This can be solved by adding a stream of values to our dependencies. Instead completing API request immediately and return a value, we will await the result from stream, that we control, and our closure will return the result only when we put some value into the stream. By doing that we can emit value first to user API, do some checks, and then to someData API and do some checks.
+                
+                Function AsyncStream.makeStream returns two parameters, one of which is continuation, which can be used to inject values into stream through `continuation.yield(Value)`
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_6.swift)
+            }
+            
+            @Step {
+                But we still have some issue here. If you run this test, it make pass completely, if you are lucky, but it will deffinetly fail at least once, if you run it repeatedly 1000 times. 
+                
+                @Image(source: Section2_Step7_1.png, alt: "Swift logo over the white background")
+            }
+            
+            @Step {
+                This happens, because we are updating our variable `displayedText` on main thread, while emitting values from background and doing checks from background. So at the point when we have emmited some value, there should pass some time while our @MainActor code gets executed and variable is updated. But how can we understand, how long we should wait? Short answer - we don't know (that depends completely on concurrency internal scheduling logic) but there is one trick to make this happen. 
+            }
+            
+            @Step {
+                Our job for updating UI is scheduled on main scheduler, so we can make our test also do his work on same scheduler, and at the point, when we need UI updates happen, give that opportunity with `Task.yield()` that will pause our code, but will give any other tasks scheduled opportunity to finish their work. And that would be our `updateDisplayedText`
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_9.swift)
+            }
+            
+            @Step {
+                Now if we run that test 1000 times it should pass. But this is still not ideal, because we don't know, whould it be enough one Task.yield here, or maybe we will need to put several next time. So there is another option, how this can be handled and we will talk about that in next "Expert" section" .
+            }
+            
+            @Step {
+                But before moving to the last section let's quickly check how to test Task cancellation.
+            }
+            
+            @Step {
+                In order to do that, declare new view model. This view model now cancels the previous task each time `fetchUserButtonTapped` is invoked
+             
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_10.swift)
+            }
+            
+            @Step {
+                Now let's write the test that will check that. It is also based on async stream and fact, that when task is cancelled, all sub-tasks created within same context are also automatically cancelled. It means that our stream will be cancelled as well and it should never emit a value. As soon as it cancelled it will pass `for _ in` loop and invoke the expecatation. In other case expectation will never be fullfilled.    
+                
+                @Code(name: "Unit Tests Advanced", file: AsyncTestsCodeSampleStepS2_11.swift)
+            }
+        }
+    }
+}

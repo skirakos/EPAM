@@ -1,0 +1,73 @@
+@Tutorial(time: 20) {
+    @Intro(title: "Swift Concurrency: Async Tests - the Basics") {
+        In this tutorial we shall cover how to property test the code with structured concurrency.   
+    
+        This section covers simple cases, and will give you basic understanding how to write simple tests. In next chapters we will cover more advances examples. If you are experienced asyn/await "user" feel free to skip this section and jump to the next one.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Async Unit Tests - simple to test use case") {
+        @ContentAndMedia {
+    
+            @Image(source: tutorialActorsLogo, alt: "Swift logo on the orange background with Actor title")
+        }
+
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+            }
+            
+            @Step {
+                Let's first write some functionality that we need to cover with unit tests. 
+                As an example we will implement View model that has `fetchUserButtonTapped()` method that should download some user info and show it on UI 
+                
+                
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_1.swift)
+            }
+            
+            @Step {
+                Add implementation for fetching user via `UserServiceProtocol`
+                
+                This protocol has one async method that either returns fetched `User` or throws `APIError` 
+                
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_2.swift)
+            }
+            
+            @Step {
+                Now let's add UI updates. We have `UserDisplayable` protocol as very simple abstraction for view layer. 
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_3.swift)
+            }
+            
+            @Step {
+                So now we have some functionality that can be tested is our ViewModel behaves as expected. But before doing that, let's add some mocks for ViewModel dependencies.
+                
+                These are simple classes that conform our 'UserDisplayable' and 'UserServiceProtocol' which has closures to control protocol methods invocations, which by default fails test when invoked (if you forgot to define behavior for one of your dependencies).
+                
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_4.swift)
+            }
+            
+            @Step {
+                And now we can finally start writing some tests. Let's cover successful case first. let's add dependencies overwrite
+                
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_5.swift)
+            }
+            
+            @Step {
+                Finishing test implementation
+                
+                You can now try to execute this test, it should pass successfully
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_6.swift)
+            }
+            
+            @Step {
+                And also one test for failed case, which should also pass if test is executed.
+                
+                So for very simple case when updates happen after all invocations are done writing tests on classes that contain async/await code is quite simple and doesn't differ much from the "regular" code testing. Next chapters will cover more complicated cases.
+                
+                @Code(name: "Unit tests Basics", file: AsyncTestsCodeSampleStepS1_7.swift)
+            }
+        }
+    }
+}

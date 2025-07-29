@@ -1,0 +1,75 @@
+@Tutorial(time: 20) {
+    @Intro(title: "Swift Concurrency: Task Locals") {
+        In this tutorial we shall cover the Task Locals.
+        
+        Important: make sure you have already checked article on Async/Await basics,
+        preceeding the tutorial section.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Task Locals") {
+        @ContentAndMedia {
+            Let's check the way Actor manages synchronization.
+            
+            @Image(source: tutorialActorsLogo, alt: "Swift logo on the orange background with Actor title")
+        }
+
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+            }
+            
+            @Step {
+                Declare MyLocals enum
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep1.swift)
+            }
+            
+            @Step {
+                Declare the top level function, hosting all the function. Leave it empty for now.
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep2.swift)
+            }
+            
+            @Step {
+                Initialize MyLocals with initial value, and add a print statement to track it.
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep3.swift)
+            }
+            
+            @Step {
+                Create folded Task, and assign another value to MyLocals.
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep4.swift)
+            }
+            
+            @Step {
+                Create another folded Task, which simulates async work.
+                Add a print statement as well to track the MyLocals current value.
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep5.swift)
+            }
+            
+            @Step {
+                Add another Task at the same fold level, simulating async work. And one more task at
+                the same fold level to print current value of MyLocals.id
+                
+                @Code(name: "Task Locals", file: TaskLocalsCodeSampleStep6.swift)
+            }
+            
+            @Step {
+                Build and run. Check the console output.
+                
+                @Image(source: tutorialTaskLocalsConsoleOutput1, alt: "Xcode console output shows that MyLocals preserved initial value for the Task it was declared for. It was passed down the flow to the folded Tasks which in their turn were capable of updating the MyLocals value")
+            }
+
+            @Step {
+                Recap: a task local value is a value that can be bound and read in the context of a Task.
+                It is implicitly carried with the task, and is accessible by any child tasks the task
+                creates (such as TaskGroup or async let created tasks).
+            }            
+        }
+    }
+}

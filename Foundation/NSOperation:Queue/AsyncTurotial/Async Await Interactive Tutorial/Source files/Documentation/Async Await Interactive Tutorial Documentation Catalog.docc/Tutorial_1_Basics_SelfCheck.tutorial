@@ -1,0 +1,61 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Basics: self check") {
+        Prior diving deeper into the Async/Await API pitfalls
+        let’s checkout a basics article summarising exercise.
+        
+        Important: make sure you have already checked article
+        on Async/Await basics, proceeding the tutorial section.
+
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Self check") {
+        @ContentAndMedia {
+            Let's try to refactor old plain GCD functionality into the new Async/Await way.
+            
+            @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        }
+
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+            }
+            
+            @Step {
+                Add the functionality based on GCD and a view controller logic making use of it.
+                
+                @Code(name: "GCD based implementation", file: BasicsSelfCheckCodeSampleStep1.swift)
+            }
+            
+            @Step {
+                Let's refactor the `fetchServerStatus` func to async api.
+                
+                @Code(name: "Regactor to Async/Await", file: BasicsSelfCheckCodeSampleStep2.swift)
+            }
+            
+            @Step {
+                Let's update view controller accordingly.
+                
+                @Code(name: "Regactor to Async/Await", file: BasicsSelfCheckCodeSampleStep3.swift)
+            }
+            
+            @Step {
+                Let's try to approach the issues one by one.
+                
+                @Code(name: "Regactor to Async/Await", file: BasicsSelfCheckCodeSampleStep4.swift)
+            }
+            
+            
+            @Step {
+                Let's make it final and also invoke `updateUI` to emulate some work done after API request 
+                
+                @Code(name: "Regactor to Async/Await", file: BasicsSelfCheckCodeSampleStep5.swift)
+            }
+            
+            @Step {
+                Recap: In order to call an async function we need to use `await` statement (or "try await" if function throws) and wrap this invocation into the `Task` when it is called from outside of Structured Concurancy world
+                }
+        }
+    }
+}

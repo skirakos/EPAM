@@ -1,0 +1,90 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Swift Concurrency: Actor - pitfalls") {
+        In this tutorial we shall cover the pitfall you may encounter using Actors in Swift Concurrency.
+        
+        Important: make sure you have already checked article on Async/Await basics,
+        preceeding the tutorial section.
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Actor synchronization specifics") {
+        @ContentAndMedia {
+            Let's check the way Actor manages synchronization.
+            
+            @Image(source: tutorialActorsLogo, alt: "Swift logo on the orange background with Actor title")
+        }
+
+        @Steps {
+            @Step {
+                You are free to follow the code using either the pet project or the playground.
+                Create a new one and follow along.
+            }
+            
+            @Step {
+                Declare an actor.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep1.swift)
+            }
+            
+            @Step {
+                Declare the top level function with an empty Task inside.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep2.swift)
+            }
+            
+            @Step {
+                Create a local actor instance within the Task.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep3.swift)
+            }
+            
+            @Step {
+                Add a group of tasks inside the Task. They will concurrantly invoke actor and try in parallel increment/decrement value. That will help us to check, are these calls thread safe. 
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep4.swift)
+            }
+            
+            @Step {
+                Add a print statement to track the actor's current value.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep5.swift)
+            }
+            
+            @Step {
+                Build and run. The console output is 1. That means the sync happened as expected and no race conditions were in place. We incremented and decremented 100 correctly and the value remained the same. (you can also try to replace actor with class and compare the results)
+                
+                @Image(source: tutorialActorConsoleOutput1, alt: "Xcode console output equals 1")
+            }
+            
+            @Step {
+                Let's rewrite a decrement functionality in a way it works only for positive values, for the counter value to be above or equal to 0.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep6.swift)
+            }
+            
+            @Step {
+                In order to simplify the code example let's comment out the first loop, keeping focus on
+                decrementing the counter.
+                
+                @Code(name: "Swift Actor", file: ActorsCodeSampleStep7.swift)
+            }
+
+            @Step {
+                Build and run. The console output is negative (despite the fact we tried to prevent that). Actor failed to sync the calls.
+                
+                Actor ensures thread safe access to the variables within it's context but it does not
+                ensure thread safe calls/sunchronization for its functions.
+                In case there is a suspension point inside the actor the next task can enter the same function which results in a race condition.
+                
+                @Image(source: tutorialActorConsoleOutput2, alt: "Xcode console output is negative")
+            }
+
+            @Step {
+                Recap: Actor is not a silver bullet, and you should know its limitations. 
+                It ensures thread safe access to the variables within it's content 
+                but it does not ensure thread safe calls for async functions.
+            }            
+        }
+    }
+}

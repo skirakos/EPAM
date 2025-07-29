@@ -1,0 +1,58 @@
+@Tutorials(name: "Swift Concurrency") {
+    @Intro(title: "Introducing Async\Await in Swift") {
+        Swift Concurrency is a modern build-in way for writing asynchronous and parallel code
+        in a structured easy to read way.  
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+
+    @Chapter(name: "Basics: self check") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "doc:Tutorial_1_Basics_SelfCheck")
+    }
+    
+    @Chapter(name: "MainActor protocol requirment") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "doc:Tutorial_2_MainActorProtocolRequirement")
+    }
+
+    @Chapter(name: "Task.sleep vs Task.yield") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "doc:Tutorial_3_TaskSleepVsTaskYield")
+    }
+    
+    @Chapter(name: "Dispatch.main vs MainActor") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_4_DispatchMainVsMainActor")
+    }
+    
+    @Chapter(name: "Error Handling") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_5_ErrorHandling")
+    }
+    
+    @Chapter(name: "Swift Actor") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_6_Actor")
+    }
+    
+    @Chapter(name: "Task Locals") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_7_TaskLocals")
+    }
+    
+    @Chapter(name: "Async Unit Tests - Basics") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_8_AsyncTests_Basics")
+    }
+    
+    @Chapter(name: "Async Unit Tests - Advanced") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_9_AsyncTests_Advanced")
+    }
+    
+    @Chapter(name: "Async Unit Tests - Expert") {
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+        @TutorialReference(tutorial: "Tutorial_10_AsyncTests_Expert")
+    }
+}

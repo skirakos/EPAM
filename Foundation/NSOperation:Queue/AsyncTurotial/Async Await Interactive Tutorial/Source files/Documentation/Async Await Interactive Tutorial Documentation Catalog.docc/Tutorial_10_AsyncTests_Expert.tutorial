@@ -1,0 +1,118 @@
+@Tutorial(time: 30) {
+    @Intro(title: "Swift Concurrency: Async Tests - Expert") {
+        This section will show approaches that use internals of Swift language in order to test code which has dependencies we can't control with expectaions or you need deterministic behavior for all async code
+        
+        @Image(source: introLogo.png, alt: "Swift logo over the orange background")
+    }
+    
+    @Section(title: "Async Unit Tests - Expert") {
+        @ContentAndMedia {
+            Note: Please use XCode project instead of playground for this tutorial.
+            
+            Disclaimer: this excersise is based "Point Free" article (original  [article](https://www.pointfree.co/blog/posts/109-announcing-concurrency-extras-useful-testable-swift-concurrency)) but with some additional explanations and a bit modified example
+            
+            @Image(source: tutorialActorsLogo, alt: "Swift logo on the orange background with Actor title")
+        }
+        
+        @Steps {            
+            @Step {
+                Let's look at the following example. We have a simple `ViewModelExpert' whos job is very simple - asynchronously increase counter each time user takes a screenshot (for that reson we subscribe for corresponding notification in a modern stream manner)
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_1.swift)
+            }
+            
+            @Step {
+                Now let's try to test this functionality and create a test class and test for it
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_2.swift)
+            }
+            
+            @Step {
+                Then we can use Task.yield() to allow the subscription of the stream of notifications to start:
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_3.swift)
+            }
+            
+            @Step {
+                Then we can simulate the user taking a screenshot by posting a notification
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_4.swift)
+            }
+            
+            @Step {
+                And then finally we can yield again to process the new notification and assert that the count incremented by 1:
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_5.swift)
+            }
+            
+            @Step {
+                Now let's try to run this test repeatedly 100 times. It will fail in majority of cases. 
+                
+                @Image(source: Section2_Step7_1.png, alt: "Swift logo over the white background")
+            }
+            
+            @Step {
+                We can try to resolve that as we did previosly - schedule everything on MainActor hoping that it will be executed one after another. And it will work **almost** correctly with fail rate approximately 0.5% on XCode 15 (you can check it by running 1000 times). And it makes such test flaky and extreemly difficult to catch and fix 🤪. 
+                
+                This time `@MainActor` doesn't work because we have uncontrolled external dependency - notification center. Previously we had our mocks and used expectations and could wait until the moment when value is actually emited from async code section. However, now we have the case, when we not only need to wait after value is emited, but also wait till the underhood task is scheduled (previosly expectation solved that for us). This depends on the system internals, and it is obvious that one `Task.yield()` on main is not always enough for that to be completed. Adding more yields is also a bad solution, because this not only slows down your test but just reduces the failure percantage while it is still possible to happen. We need a way to control when and how this work is scheduled.  
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_6.swift)
+            }
+            
+            @Step {
+                First let's look how we can fix it and later we will explain you the magic under the hood. First of all - roll back **all** the `@MainActor` changes, we don't need them anymore
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_5.swift)
+            }
+            
+            @Step {
+                Now you will need to install [swift-concurrency-extras](https://github.com/pointfreeco/swift-concurrency-extras) 3rd-party library as a package, make sure you adding it to your test target.
+            }
+            
+            @Step {
+                And now we can write a simple code that will solve the issue for us. Just wrap code in our test case into `await withMainSerialExecutor { .. } ` function
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_7.swift)
+            }
+            
+            @Step {
+                Now you can run your test 1000 times and it will always pass 🪄🪄🪄! 
+            }
+            
+            @Step {
+                You can also use withMainSerialExecutor to wrap an entire test case by overriding the invokeTest method. This will made this behavior default for all of your test cases.
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_8.swift)
+            }
+            
+            @Step {
+                Now let's briefly explain how this works. For the detailed explanation please watch this sessions (paid content): [first](https://www.pointfree.co/episodes/ep240-reliable-async-tests), [second](https://www.pointfree.co/episodes/ep241-reliable-async-tests).
+            }
+            
+            @Step {
+                 So what this code section (and library) does, it uses the same approach that was used in order to effectivly test [Swift Async Algortims](https://github.com/apple/swift-async-algorithms/tree/adb12bfcccaa040778c905c5a50da9d9367fd0db). In the internals of Swift C++ code there are functions which are not exposed to the Swift API. And one of them is `swift_task_enqueueGlobal_hook`. It is a global hook (closure) which is invoked each time any async work after `await` is schdeduled. Code on the right (from [GlobalExecutor.cpp](https://github.com/apple/swift/blob/bd11fceff5390c960ccdfca2f6c8951dc96941c9/stdlib/public/BackDeployConcurrency/GlobalExecutor.cpp#L85-L92)) shows Swift C++ code which is called each time async task is enqueued. Here `task` means any kind of asynchronous work, including every single suspension point from an await. 
+                 
+                 @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_9.swift)
+            }
+            
+            @Step {
+                So with a bit of C++/Swift code (how exactly it is done in details explained in videos I mentioned above, or you can check the sourced for the lib) there is a way to override this hook, like it is shown in this example and it will make **any** code after `await` (no matter where it is called - in background task or main, in your code or 3-rd pary or even in system library) to be scheduled on the MainActor from internals of the Swift language itself.
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_10.swift)
+            }
+            
+            @Step {
+                The `ConcurrencyExtras` lib has a public static var `uncheckedUseMainSerialExecutor` which when set to `true` overrides the hook and forces any "job" to be scheduled on `MainActor`
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_11.swift)
+            }
+            
+            @Step {
+                And if we check `withMainSerialExecutor { ... }` that we used before to fix our test, we will see, that all it is does is the following (check the code on the right)
+                
+                @Code(name: "Section 3", file: AsyncTestsCodeSampleStepS3_12.swift)
+            }
+            
+            @Step {
+                And this is how it works internally - all async work is put on MainActor queue so each time you do Task.yield() it gives a change to complete all the "background" work scheduled and it makes your tests detemenistic. Now the question which authors of that lib asked themselves "We have completely altered the execution environment our tests run in, seemingly just so that we can get them passing." So is it makes sense and is it the way how such code should be tested? And short answer is "yes", this is a completely correct way to test your async code (from legal point of view this code is also 100% correct, there is no private API usage and they used the same approach which is used in Swift Async Algoritms). You can check detailed explanation  [here](https://www.pointfree.co/blog/posts/109-announcing-concurrency-extras-useful-testable-swift-concurrency) in the end of the first section "Serial execution"
+            }
+        }
+    }
+}
