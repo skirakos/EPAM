@@ -11,13 +11,15 @@ struct Config: Codable {
     let title: String
     let filterKeyword: String
     let maxImages: Int
+    let imageNames: [String]
 }
 
 class ViewController: UIViewController {
     private var config: Config = .init(
         title: "",
         filterKeyword: "",
-        maxImages: 2,
+        maxImages: 0,
+        imageNames: []
     )
     
     private let scrollView: UIScrollView = {
@@ -45,17 +47,10 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    private let allImageNames = [
-        "gallery_1",
-        "gallery_2",
-        "gallery_3",
-        "gallery_4",
-        "gallery_5",
-        "museum_1",
-        "museum_2",
-        "museum_3",
-        "museum_4"
-    ]
+    private var allImageNames: [String] {
+        return config.imageNames
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,14 @@
 {
-  "title": "Explore Galleries and Museums",
+  "title": "Museum",
   "filterKeyword": "museum",
-  "maxImages": 10,
+  "maxImages": 3,
+  "imageNames": ["gallery_1",
+      "gallery_2",
+      "gallery_3",
+      "gallery_4",
+      "gallery_5",
+      "museum_1",
+      "museum_2",
+      "museum_3",
+      "museum_4"]
 }
