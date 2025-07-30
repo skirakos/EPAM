@@ -108,21 +108,41 @@ class ViewController: UIViewController {
             return
         }
 
-        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("savedText.txt")
+        guard let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            print("Could not find documents directory")
+            return
+        }
+
+        let fileURL = documentsURL.appendingPathComponent("savedText.txt")
+        let newText = text + "\n"
 
         do {
-            try text.write(to: fileURL, atomically: true, encoding: .utf8)
-            print("File saved at \(fileURL.path)")
+            if FileManager.default.fileExists(atPath: fileURL.path) {
+                let fileHandle = try FileHandle(forWritingTo: fileURL)
+                defer { fileHandle.closeFile() }
+                if let data = newText.data(using: .utf8) {
+                    fileHandle.seekToEndOfFile()
+                    fileHandle.write(data)
+                }
+            } else {
+                try newText.write(to: fileURL, atomically: true, encoding: .utf8)
+            }
+
+            print("Appended text to \(fileURL.path)")
             textField.text = ""
         } catch {
             print("Error saving file: \(error)")
         }
     }
 
+
     @objc func retrieve() {
-        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("savedText.txt")
+        guard let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                outputView.text = "Unable to locate documents directory"
+                return
+            }
+
+        let fileURL = documentsURL.appendingPathComponent("savedText.txt")
 
         do {
             let text = try String(contentsOf: fileURL, encoding: .utf8)
