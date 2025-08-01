@@ -7,16 +7,26 @@
 
 import Foundation
 
-let op = BlockOperation {
-    print(Thread.current)
-    print("Operation \"A\" started")
-    for _ in 0..<1000000 {
-     // do nothing
+class OperationTest {
+    let customQueue = OperationQueue()
+
+    func runExample() {
+        let operation = BlockOperation {
+            print("Operation \"A\" started on thread: \(Thread.current)")
+            
+            for _ in 0..<1_000_000 {
+                // do nothing
+            }
+
+            print("Operation \"A\" finished on thread: \(Thread.current)")
+        }
+//         OperationQueue.main.addOperation(operation)
+
+        customQueue.addOperation(operation)
     }
-    print("Operation \"A\" finished")
 }
 
+let test = OperationTest()
+test.runExample()
 
-//let queue = OperationQueue()
-let queue = OperationQueue.main
-queue.addOperation(op)
+RunLoop.main.run(until: Date().addingTimeInterval(1))
