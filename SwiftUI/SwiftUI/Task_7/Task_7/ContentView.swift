@@ -16,7 +16,16 @@ struct Profile: Identifiable {
 }
 
 struct ContentView: View {
-    private var profile: Profile = .init(name: "Seda Kirakosyan", location: "Yerevan", age: 21, isPremium: true)
+    var profile: Profile
+    
+    init(profile: Profile = .init(
+        name: "Sample User",
+        location: "Yerevan",
+        age: 21,
+        isPremium: false
+    )) {
+        self.profile = profile
+    }
     
     var body: some View {
         HStack {
@@ -58,5 +67,20 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    VStack {
+        ContentView(profile: .init(
+            name: "Seda Kirakosyan",
+            location: "Yerevan",
+            age: 21,
+            isPremium: true
+        ))
+        
+        ContentView(profile: .init(
+            name: "Aram Petrosyan",
+            location: "Gyumri",
+            age: 28,
+            isPremium: false
+        ))
+    }
+    .padding()
 }
