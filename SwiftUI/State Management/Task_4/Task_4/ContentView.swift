@@ -36,6 +36,29 @@ struct ContentView: View {
     }
 }
 
+//struct ContentView: View {
+//    @State var userProfile: UserProfile = .init()
+//    var body: some View {
+//        
+//        VStack(alignment: .leading, spacing: 16) {
+//            Text("Hello \(userProfile.name).\nYour email is \(userProfile.email).")
+//                .font(.headline)
+//
+//            TextField("Name", text: $userProfile.name)
+//                .textFieldStyle(.roundedBorder)
+//
+//            TextField("Email", text: $userProfile.email)
+//                .textFieldStyle(.roundedBorder)
+//                .textInputAutocapitalization(.never)
+//                .keyboardType(.emailAddress)
+//                .autocorrectionDisabled()
+//        }
+//        .padding()
+//    }
+//}
+
+
+
 #Preview {
     ContentView()
 }
