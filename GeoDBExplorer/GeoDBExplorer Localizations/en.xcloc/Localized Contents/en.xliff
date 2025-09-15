@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="GeoDBExplorer-InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>GeoDBExplorer</source>
+        <target state="new">GeoDBExplorer</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="About me" xml:space="preserve">
+        <source>About me</source>
+        <target state="new">About me</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Capital" xml:space="preserve">
+        <source>Capital</source>
+        <target state="new">Capital</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cities" xml:space="preserve">
+        <source>Cities</source>
+        <target state="new">Cities</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Code" xml:space="preserve">
+        <source>Code</source>
+        <target state="new">Code</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Countries" xml:space="preserve">
+        <source>Countries</source>
+        <target state="new">Countries</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Currencies" xml:space="preserve">
+        <source>Currencies</source>
+        <target state="new">Currencies</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Favorite countries" xml:space="preserve">
+        <source>Favorite countries</source>
+        <target state="new">Favorite countries</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Favorites" xml:space="preserve">
+        <source>Favorites</source>
+        <target state="new">Favorites</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="First name" xml:space="preserve">
+        <source>First name</source>
+        <target state="new">First name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Invalid location" xml:space="preserve">
+        <source>Invalid location</source>
+        <target state="new">Invalid location</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Key" xml:space="preserve">
+        <source>Key</source>
+        <target state="new">Key</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Last name" xml:space="preserve">
+        <source>Last name</source>
+        <target state="new">Last name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading cities…" xml:space="preserve">
+        <source>Loading cities…</source>
+        <target state="new">Loading cities…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading countries…" xml:space="preserve">
+        <source>Loading countries…</source>
+        <target state="new">Loading countries…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading…" xml:space="preserve">
+        <source>Loading…</source>
+        <target state="new">Loading…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Location" xml:space="preserve">
+        <source>Location</source>
+        <target state="new">Location</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <target state="new">Next</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Page %lld  •  %lld / %lld" xml:space="preserve">
+        <source>Page %1$lld  •  %2$lld / %3$lld</source>
+        <target state="new">Page %1$lld  •  %2$lld / %3$lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prev" xml:space="preserve">
+        <source>Prev</source>
+        <target state="new">Prev</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile" xml:space="preserve">
+        <source>Profile</source>
+        <target state="new">Profile</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile page" xml:space="preserve">
+        <source>Profile page</source>
+        <target state="new">Profile page</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Region" xml:space="preserve">
+        <source>Region</source>
+        <target state="new">Region</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove avatar" xml:space="preserve">
+        <source>Remove avatar</source>
+        <target state="new">Remove avatar</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This item has bad coordinates." xml:space="preserve">
+        <source>This item has bad coordinates.</source>
+        <target state="new">This item has bad coordinates.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="• %@" xml:space="preserve">
+        <source>• %@</source>
+        <target state="new">• %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="• %lld" xml:space="preserve">
+        <source>• %lld</source>
+        <target state="new">• %lld</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,274 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "• %@" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "• %lld" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "About me" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Իմ մասին"
+          }
+        }
+      }
+    },
+    "Capital" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Մայրաքաղաք"
+          }
+        }
+      }
+    },
+    "Cities" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Քաղաքներ"
+          }
+        }
+      }
+    },
+    "Code" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Կոդ"
+          }
+        }
+      }
+    },
+    "Countries" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Երկրներ"
+          }
+        }
+      }
+    },
+    "Currencies" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Արժույթներ"
+          }
+        }
+      }
+    },
+    "English" : {
+
+    },
+    "Favorite countries" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Նախընտրելի երկրներ"
+          }
+        }
+      }
+    },
+    "Favorites" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Նախընտրածներ"
+          }
+        }
+      }
+    },
+    "First name" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Անուն"
+          }
+        }
+      }
+    },
+    "Invalid location" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Սխալ հասցե"
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Last name" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ազգանուն"
+          }
+        }
+      }
+    },
+    "Loading cities…" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Քաղաքների բեռնում …"
+          }
+        }
+      }
+    },
+    "Loading countries…" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Երկրների բեռնում …"
+          }
+        }
+      }
+    },
+    "Loading…" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Բեռնում"
+          }
+        }
+      }
+    },
+    "Location" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Հասցե"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Հաջորդ"
+          }
+        }
+      }
+    },
+    "Page %lld  •  %lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Page %1$lld  •  %2$lld / %3$lld"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Էջ %1$lld  •  %2$lld / %3$lld"
+          }
+        }
+      }
+    },
+    "Prev" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Նախորդ"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Պրոֆիլ"
+          }
+        }
+      }
+    },
+    "Profile page" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Պրոֆիլ"
+          }
+        }
+      }
+    },
+    "Region" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Շրջան"
+          }
+        }
+      }
+    },
+    "Remove avatar" : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Հեռացնել նկարը"
+          }
+        }
+      }
+    },
+    "This item has bad coordinates." : {
+      "localizations" : {
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Վատ կոորդինատներ"
+          }
+        }
+      }
+    },
+    "Հայերեն" : {
+
+    }
+  },
+  "version" : "1.0"
+}

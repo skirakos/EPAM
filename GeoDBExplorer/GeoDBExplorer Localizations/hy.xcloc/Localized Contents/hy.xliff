@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="GeoDBExplorer-InfoPlist.xcstrings" source-language="en" target-language="hy" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>GeoDBExplorer</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Localizable.xcstrings" source-language="en" target-language="hy" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+    </header>
+    <body>
+      <trans-unit id="About me" xml:space="preserve">
+        <source>About me</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Capital" xml:space="preserve">
+        <source>Capital</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cities" xml:space="preserve">
+        <source>Cities</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Code" xml:space="preserve">
+        <source>Code</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Countries" xml:space="preserve">
+        <source>Countries</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Currencies" xml:space="preserve">
+        <source>Currencies</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Favorite countries" xml:space="preserve">
+        <source>Favorite countries</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Favorites" xml:space="preserve">
+        <source>Favorites</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="First name" xml:space="preserve">
+        <source>First name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Invalid location" xml:space="preserve">
+        <source>Invalid location</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Key" xml:space="preserve">
+        <source>Key</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Last name" xml:space="preserve">
+        <source>Last name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading cities…" xml:space="preserve">
+        <source>Loading cities…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading countries…" xml:space="preserve">
+        <source>Loading countries…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Loading…" xml:space="preserve">
+        <source>Loading…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Location" xml:space="preserve">
+        <source>Location</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Page %lld  •  %lld / %lld" xml:space="preserve">
+        <source>Page %1$lld  •  %2$lld / %3$lld</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prev" xml:space="preserve">
+        <source>Prev</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile" xml:space="preserve">
+        <source>Profile</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile page" xml:space="preserve">
+        <source>Profile page</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Region" xml:space="preserve">
+        <source>Region</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove avatar" xml:space="preserve">
+        <source>Remove avatar</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This item has bad coordinates." xml:space="preserve">
+        <source>This item has bad coordinates.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="• %@" xml:space="preserve">
+        <source>• %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="• %lld" xml:space="preserve">
+        <source>• %lld</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,91 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "• %@" : {
+
+    },
+    "• %lld" : {
+
+    },
+    "About me" : {
+
+    },
+    "Capital" : {
+
+    },
+    "Cities" : {
+
+    },
+    "Code" : {
+
+    },
+    "Countries" : {
+
+    },
+    "Currencies" : {
+
+    },
+    "Favorite countries" : {
+
+    },
+    "Favorites" : {
+
+    },
+    "First name" : {
+
+    },
+    "Invalid location" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Last name" : {
+
+    },
+    "Loading cities…" : {
+
+    },
+    "Loading countries…" : {
+
+    },
+    "Loading…" : {
+
+    },
+    "Location" : {
+
+    },
+    "Next" : {
+
+    },
+    "Page %lld  •  %lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Page %1$lld  •  %2$lld / %3$lld"
+          }
+        }
+      }
+    },
+    "Prev" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Profile page" : {
+
+    },
+    "Region" : {
+
+    },
+    "Remove avatar" : {
+
+    },
+    "This item has bad coordinates." : {
+
+    }
+  },
+  "version" : "1.0"
+}
